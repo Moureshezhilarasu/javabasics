@@ -1,0 +1,12 @@
+# Java build output
+bin/
+
+# VS Code
+.vscode/
+
+# Libraries
+lib/**/*.jar
+
+# OS files
+.DS_Store
+Thumbs.db

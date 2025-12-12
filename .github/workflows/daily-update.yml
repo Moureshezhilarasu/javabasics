@@ -1,0 +1,23 @@
+name: Daily Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # every day at 00:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Update timestamp file
+        run: |
+          echo "Last update: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > last_update.txt
+          git add last_update.txt
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "chore: daily update $(date -u +"%Y-%m-%d")" || echo "No changes to commit"
+          git push || echo "Push failed (check permissions)"
