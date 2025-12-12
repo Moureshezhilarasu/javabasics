@@ -8,16 +8,20 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      GH_PUSH_TOKEN: ${{ secrets.GH_PUSH_TOKEN }}
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repository (no credentials)
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          fetch-depth: 0
+          persist-credentials: false
 
-      - name: Update timestamp file
+      - name: Update timestamp file and push using `GH_PUSH_TOKEN`
         run: |
-          echo "Last update: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > last_update.txt
+          echo "Last update: $(date -u +\"%Y-%m-%d %H:%M:%S UTC\")" > last_update.txt
           git add last_update.txt
-          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "chore: daily update $(date -u +"%Y-%m-%d")" || echo "No changes to commit"
-          git push || echo "Push failed (check permissions)"
+          git -c user.name=\"github-actions[bot]\" -c user.email=\"41898282+github-actions[bot]@users.noreply.github.com\" commit -m \"chore: daily update $(date -u +\"%Y-%m-%d\")\" || echo \"No changes to commit\"
+          git remote set-url origin https://x-access-token:${GH_PUSH_TOKEN}@github.com/${{ github.repository }}
+          git push origin HEAD:main || echo \"Push failed (check permissions or token)\"
