@@ -1,0 +1,149 @@
+﻿2025-12-12T06:08:30.8764290Z Current runner version: '2.329.0'
+2025-12-12T06:08:30.8789619Z ##[group]Runner Image Provisioner
+2025-12-12T06:08:30.8790354Z Hosted Compute Agent
+2025-12-12T06:08:30.8790881Z Version: 20251202.455
+2025-12-12T06:08:30.8791571Z Commit: 6c10caca4910e198df60de23adf20ad317c474e3
+2025-12-12T06:08:30.8792562Z Build Date: 2025-12-02T15:56:59Z
+2025-12-12T06:08:30.8793245Z Worker ID: {9771989d-cef1-4160-9c89-fdc3906ded91}
+2025-12-12T06:08:30.8794022Z ##[endgroup]
+2025-12-12T06:08:30.8794497Z ##[group]Operating System
+2025-12-12T06:08:30.8795060Z Ubuntu
+2025-12-12T06:08:30.8795569Z 24.04.3
+2025-12-12T06:08:30.8795980Z LTS
+2025-12-12T06:08:30.8796413Z ##[endgroup]
+2025-12-12T06:08:30.8796918Z ##[group]Runner Image
+2025-12-12T06:08:30.8797461Z Image: ubuntu-24.04
+2025-12-12T06:08:30.8798211Z Version: 20251208.163.1
+2025-12-12T06:08:30.8799317Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251208.163/images/ubuntu/Ubuntu2404-Readme.md
+2025-12-12T06:08:30.8800847Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251208.163
+2025-12-12T06:08:30.8801924Z ##[endgroup]
+2025-12-12T06:08:30.8802986Z ##[group]GITHUB_TOKEN Permissions
+2025-12-12T06:08:30.8805066Z Contents: read
+2025-12-12T06:08:30.8805706Z Metadata: read
+2025-12-12T06:08:30.8806162Z Packages: read
+2025-12-12T06:08:30.8806637Z ##[endgroup]
+2025-12-12T06:08:30.8809352Z Secret source: Actions
+2025-12-12T06:08:30.8810264Z Prepare workflow directory
+2025-12-12T06:08:30.9310372Z Prepare all required actions
+2025-12-12T06:08:30.9347008Z Getting action download info
+2025-12-12T06:08:31.2303665Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2025-12-12T06:08:31.3776663Z Complete job name: update
+2025-12-12T06:08:31.4543857Z ##[group]Run actions/checkout@v4
+2025-12-12T06:08:31.4544733Z with:
+2025-12-12T06:08:31.4545138Z   fetch-depth: 0
+2025-12-12T06:08:31.4545581Z   persist-credentials: false
+2025-12-12T06:08:31.4546129Z   repository: Moureshezhilarasu/javabasics
+2025-12-12T06:08:31.4546868Z   token: ***
+2025-12-12T06:08:31.4547269Z   ssh-strict: true
+2025-12-12T06:08:31.4547857Z   ssh-user: git
+2025-12-12T06:08:31.4548275Z   clean: true
+2025-12-12T06:08:31.4548691Z   sparse-checkout-cone-mode: true
+2025-12-12T06:08:31.4549211Z   fetch-tags: false
+2025-12-12T06:08:31.4549650Z   show-progress: true
+2025-12-12T06:08:31.4550077Z   lfs: false
+2025-12-12T06:08:31.4550481Z   submodules: false
+2025-12-12T06:08:31.4550913Z   set-safe-directory: true
+2025-12-12T06:08:31.4551609Z env:
+2025-12-12T06:08:31.4552001Z   GH_PUSH_TOKEN: 
+2025-12-12T06:08:31.4552413Z ##[endgroup]
+2025-12-12T06:08:31.5653567Z Syncing repository: Moureshezhilarasu/javabasics
+2025-12-12T06:08:31.5656716Z ##[group]Getting Git version info
+2025-12-12T06:08:31.5658364Z Working directory is '/home/runner/work/javabasics/javabasics'
+2025-12-12T06:08:31.5659522Z [command]/usr/bin/git version
+2025-12-12T06:08:31.5728707Z git version 2.52.0
+2025-12-12T06:08:31.5755466Z ##[endgroup]
+2025-12-12T06:08:31.5771172Z Temporarily overriding HOME='/home/runner/work/_temp/42eb68aa-f455-4426-bca7-e4820faaa69b' before making global git config changes
+2025-12-12T06:08:31.5773844Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-12T06:08:31.5778155Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/javabasics/javabasics
+2025-12-12T06:08:31.5816936Z Deleting the contents of '/home/runner/work/javabasics/javabasics'
+2025-12-12T06:08:31.5821011Z ##[group]Initializing the repository
+2025-12-12T06:08:31.5825702Z [command]/usr/bin/git init /home/runner/work/javabasics/javabasics
+2025-12-12T06:08:31.5941905Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-12-12T06:08:31.5943385Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2025-12-12T06:08:31.5944332Z hint: to use in all of your new repositories, which will suppress this warning,
+2025-12-12T06:08:31.5945224Z hint: call:
+2025-12-12T06:08:31.5945859Z hint:
+2025-12-12T06:08:31.5947175Z hint: 	git config --global init.defaultBranch <name>
+2025-12-12T06:08:31.5948199Z hint:
+2025-12-12T06:08:31.5949349Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-12-12T06:08:31.5951200Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-12-12T06:08:31.5952673Z hint:
+2025-12-12T06:08:31.5953516Z hint: 	git branch -m <name>
+2025-12-12T06:08:31.5954428Z hint:
+2025-12-12T06:08:31.5955542Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-12-12T06:08:31.5957535Z Initialized empty Git repository in /home/runner/work/javabasics/javabasics/.git/
+2025-12-12T06:08:31.5961231Z [command]/usr/bin/git remote add origin https://github.com/Moureshezhilarasu/javabasics
+2025-12-12T06:08:31.5995479Z ##[endgroup]
+2025-12-12T06:08:31.5996816Z ##[group]Disabling automatic garbage collection
+2025-12-12T06:08:31.6000385Z [command]/usr/bin/git config --local gc.auto 0
+2025-12-12T06:08:31.6028657Z ##[endgroup]
+2025-12-12T06:08:31.6030114Z ##[group]Setting up auth
+2025-12-12T06:08:31.6036328Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-12T06:08:31.6065356Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-12T06:08:31.6426942Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-12T06:08:31.6457570Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-12T06:08:31.6675353Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-12T06:08:31.6704849Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-12T06:08:31.6923933Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-12-12T06:08:31.6958735Z ##[endgroup]
+2025-12-12T06:08:31.6959562Z ##[group]Fetching the repository
+2025-12-12T06:08:31.6966922Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2025-12-12T06:08:31.9265498Z From https://github.com/Moureshezhilarasu/javabasics
+2025-12-12T06:08:31.9269231Z  * [new branch]      main       -> origin/main
+2025-12-12T06:08:31.9311006Z [command]/usr/bin/git branch --list --remote origin/main
+2025-12-12T06:08:31.9334421Z   origin/main
+2025-12-12T06:08:31.9343133Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2025-12-12T06:08:31.9362510Z b64469be8885b01cdea02fdcca0cc5f6678eefad
+2025-12-12T06:08:31.9368234Z ##[endgroup]
+2025-12-12T06:08:31.9369772Z ##[group]Determining the checkout info
+2025-12-12T06:08:31.9371481Z ##[endgroup]
+2025-12-12T06:08:31.9374514Z [command]/usr/bin/git sparse-checkout disable
+2025-12-12T06:08:31.9415748Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-12-12T06:08:31.9442239Z ##[group]Checking out the ref
+2025-12-12T06:08:31.9446323Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-12-12T06:08:31.9493405Z Switched to a new branch 'main'
+2025-12-12T06:08:31.9496742Z branch 'main' set up to track 'origin/main'.
+2025-12-12T06:08:31.9502747Z ##[endgroup]
+2025-12-12T06:08:31.9535182Z [command]/usr/bin/git log -1 --format=%H
+2025-12-12T06:08:31.9558531Z b64469be8885b01cdea02fdcca0cc5f6678eefad
+2025-12-12T06:08:31.9567010Z ##[group]Removing auth
+2025-12-12T06:08:31.9570731Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-12T06:08:31.9598311Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-12T06:08:31.9821441Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-12T06:08:31.9842413Z http.https://github.com/.extraheader
+2025-12-12T06:08:31.9851746Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-12-12T06:08:31.9884359Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-12T06:08:32.0100351Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-12T06:08:32.0136269Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-12T06:08:32.0346569Z ##[endgroup]
+2025-12-12T06:08:32.0591711Z ##[group]Run echo "Last update: $(date -u +\"%Y-%m-%d %H:%M:%S UTC\")" > last_update.txt
+2025-12-12T06:08:32.0594001Z [36;1mecho "Last update: $(date -u +\"%Y-%m-%d %H:%M:%S UTC\")" > last_update.txt[0m
+2025-12-12T06:08:32.0595732Z [36;1mgit add last_update.txt[0m
+2025-12-12T06:08:32.0599466Z [36;1mgit -c user.name=\"github-actions[bot]\" -c user.email=\"41898282+github-actions[bot]@users.noreply.github.com\" commit -m \"chore: daily update $(date -u +\"%Y-%m-%d\")\" || echo \"No changes to commit\"[0m
+2025-12-12T06:08:32.0604208Z [36;1mgit remote set-url origin https://x-access-token:${GH_PUSH_TOKEN}@github.com/Moureshezhilarasu/javabasics[0m
+2025-12-12T06:08:32.0607191Z [36;1mgit push origin HEAD:main || echo \"Push failed (check permissions or token)\"[0m
+2025-12-12T06:08:32.0652175Z shell: /usr/bin/bash -e {0}
+2025-12-12T06:08:32.0652847Z env:
+2025-12-12T06:08:32.0653315Z   GH_PUSH_TOKEN: 
+2025-12-12T06:08:32.0653851Z ##[endgroup]
+2025-12-12T06:08:32.0740798Z date: extra operand ‘%H:%M:%S’
+2025-12-12T06:08:32.0741678Z Try 'date --help' for more information.
+2025-12-12T06:08:32.0790772Z error: pathspec 'daily' did not match any file(s) known to git
+2025-12-12T06:08:32.0792648Z error: pathspec 'update' did not match any file(s) known to git
+2025-12-12T06:08:32.0794168Z error: pathspec '"2025-12-12""' did not match any file(s) known to git
+2025-12-12T06:08:32.0795630Z "No changes to commit"
+2025-12-12T06:08:32.0810990Z /home/runner/work/_temp/4d764dd6-401e-49c8-9454-fced62f4957a.sh: line 5: syntax error near unexpected token `('
+2025-12-12T06:08:32.0824772Z ##[error]Process completed with exit code 2.
+2025-12-12T06:08:32.0958237Z Post job cleanup.
+2025-12-12T06:08:32.1907109Z [command]/usr/bin/git version
+2025-12-12T06:08:32.1942998Z git version 2.52.0
+2025-12-12T06:08:32.1989583Z Temporarily overriding HOME='/home/runner/work/_temp/4b86ef2b-6f74-406a-b8ff-1b2fac27415c' before making global git config changes
+2025-12-12T06:08:32.1992994Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-12T06:08:32.1995648Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/javabasics/javabasics
+2025-12-12T06:08:32.2035233Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-12T06:08:32.2067512Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-12T06:08:32.2292590Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-12T06:08:32.2326537Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-12T06:08:32.2545662Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-12T06:08:32.2588064Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-12T06:08:32.2935040Z Cleaning up orphan processes
