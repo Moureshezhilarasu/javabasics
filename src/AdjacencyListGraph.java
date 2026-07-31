@@ -15,7 +15,6 @@
  */
 
 import java.util.*;
-
 public class AdjacencyListGraph {
     private final int n;                     // number of vertices (0..n-1)
     private final List<List<Integer>> adj;   // adjacency lists

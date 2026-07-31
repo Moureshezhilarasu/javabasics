@@ -113,7 +113,6 @@ public class SimpleAVLTree {
         inorder(root);
         System.out.println();
     }
-
     // Main method to test
     public static void main(String[] args) {
         SimpleAVLTree vishal = new SimpleAVLTree();

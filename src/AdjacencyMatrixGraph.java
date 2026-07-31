@@ -15,7 +15,6 @@
  */
 
 import java.util.*;
-
 public class AdjacencyMatrixGraph {
     private final int n;                // number of vertices (0..n-1)
     private final int[][] matrix;       // adjacency matrix (0/1 or weights)

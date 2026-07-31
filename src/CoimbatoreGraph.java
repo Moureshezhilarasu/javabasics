@@ -84,7 +84,8 @@ public class CoimbatoreGraph {
         if (current == -1) return;
         printPath(parent[current], parent);
         System.out.print(townNames[current] + (parent[current] != -1 ? " " : ""));
-        if (current != -1 && getTarget(current, parent)) System.out.print("-> ");
+        if (current != -1 && getTarget(current, parent)) 
+            System.out.print("-> ");
     }
 
     private boolean getTarget(int curr, int[] p) {
